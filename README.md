@@ -1,2 +1,2 @@
-# Projects
-Projects made in Data Scientist course
+# Practicum
+Projects made in the Data Scientist course in Practicum
