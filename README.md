@@ -4,4 +4,4 @@ They involve data Preprocessing and data analysis as well as statistical analysi
 
 | Project               | Description                                                                                 | Highlights                      |
 |:--------------------- |:------------------------------------------------------------------------------------------- |:------------------------------ |
-|[Análisis videojuegos](https://github.com/IreneRA/Practicum/blob/main/Analisis_videojuegos.ipynb)|Identificar patrones que determinan si un juego tiene éxito o no para tener una planificación eficiente de campañas publicitarias y analizar exito de juegos por región.|*pandas, matplotlib, scipy, numpy, hypothesis test*|
+|[Videogames analysis](https://github.com/IreneRA/Practicum/blob/main/Analisis_videojuegos.ipynb)|Identify patterns that determine if a game is successful or not in order to have an efficient planning of advertising campaigns and analyze the success of games by region.|*pandas, matplotlib, scipy, numpy, hypothesis test*|
