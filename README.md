@@ -1,5 +1,5 @@
 # TripleTen LatAm (Practicum)
-These are the projects I made in the Data Scientist course in TripleTen LatAm.
+These are the projects I made in the Data Scientist course in [TripleTen LatAm](https://practicum.yandex.com/data-scientist).
 
 They involve data Preprocessing and data analysis as well as statistical analysis. 
 
@@ -11,7 +11,7 @@ They involve data Preprocessing and data analysis as well as statistical analysi
 
 
 # TripleTen LatAm (Practicum)
-Estos son proyectos que hice en el curso de científico de datos en TripleTen LatAm.
+Estos son proyectos que hice en el curso de científico de datos en  [TripleTen LatAm](https://tripleten.com/es-mex/data-scientist).
 
 Los proyectos involucran preprocesamiento de datos y análisis estadístico. 
 
