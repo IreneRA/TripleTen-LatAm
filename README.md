@@ -18,5 +18,7 @@ Los proyectos involucran preprocesamiento de datos y análisis estadístico.
 | Proyecto               | Descripción                                                                                 | Características a destacar                      |
 |:--------------------- |:------------------------------------------------------------------------------------------- |:------------------------------ |
 |[Análisis del riesgo de prestatarios](https://github.com/IreneRA/Practicum/blob/2-borrowers%E2%80%99risk-analysis/An%C3%A1lisis%20del%20riesgo%20de%20incumplimiento%20de%20los%20prestatarios.ipynb)| Analizar características importantes a tener en cuenta al crear una puntuación de crédito para un cliente potencial.|*pandas, valores duplicados y ausentes, tipos de datos erróneos, clasificar datos*|
+
+editado
 |[Análisis de videojuegos](https://github.com/IreneRA/Practicum/blob/5-Videogames-analysis/Analisis_videojuegos.ipynb)|Identificar patrones que determinan si un juego tiene éxito o no para tener una planificación eficiente de campañas publicitarias y analizar exito de juegos por región.|*pandas, matplotlib, scipy, numpy, test de hipótesis*|
 |[Análisis de extracción de oro](https://github.com/IreneRA/TripleTen-LatAm/blob/10-Gold-extraction-analysis/S10%20Extraccion%20de%20oro2.ipynb)|Crear un modelo de Machine Learning para predecir la cantidad de oro extraído, optimizar la producción y eliminar los parámetros no rentables.|*pandas, matplotlib, numpy, sklearn*|
