@@ -91,7 +91,7 @@ Flash Cab	                        19558
 Taxi Affiliation Services	        11422
 Medallion Leasin	                10367
 Yellow Cab	                        9888
-Taxi Affiliation Service Yellow     9299
+Taxi Affiliation Service Yellow       9299
 ...
 ```
 
