@@ -69,3 +69,66 @@ Se cuenta con una base de datos cuyo esquema de tablas se muestra a continuació
     - No se toman en cuenta los viajes para los que no hay datos disponibles sobre el clima
 - Se incluye la duración de cada viaje
 
+Lo anterior, se hace por medio del siguiente código `SQL`:
+
+- Se crea la condición para separar las condiciones de clima
+```SQL
+SELECT
+    DATE_TRUNC('hour',ts) AS ts,
+    CASE WHEN description LIKE '%rain%' THEN 'Bad'
+         WHEN description LIKE '%storm%' THEN 'Bad'
+        ELSE 'Good' END AS weather_conditions
+FROM
+    weather_records;
+```
+
+El resultado del código anterior fue el siguiente:
+```
+ts	weather_conditions
+2017-11-01 00:00:00	Good
+2017-11-01 01:00:00	Good
+2017-11-01 02:00:00	Good
+2017-11-01 03:00:00	Good
+2017-11-01 04:00:00	Good
+...
+2017-11-09 03:00:00	Good
+2017-11-09 04:00:00	Good
+2017-11-09 05:00:00	Good
+2017-11-09 06:00:00	Good
+2017-11-09 07:00:00	Good
+```
+- Con el método anterior, se unifican los datos requeridos con el siguiente código `SQL`:
+  
+```SQL
+SELECT
+    start_ts,
+    T.weather_conditions,
+    duration_seconds
+FROM 
+    trips INNER JOIN (
+        SELECT
+            ts,
+        CASE WHEN description LIKE '%rain%' OR description LIKE '%storm%' THEN 'Bad'
+            ELSE 'Good' END AS weather_conditions
+        FROM weather_records) T on T.ts = trips.start_ts
+WHERE 
+    pickup_location_id = 50 AND dropoff_location_id = 63 
+    AND EXTRACT (DOW from trips.start_ts) = 6
+ORDER BY trip_id;
+```
+
+El resultado del código anterior fue el siguiente:
+```
+start_ts	weather_conditions	duration_seconds
+2017-11-25 12:00:00	Good	1380
+2017-11-25 16:00:00	Good	2410
+2017-11-25 14:00:00	Good	1920
+2017-11-25 12:00:00	Good	1543
+2017-11-04 10:00:00	Good	2512
+...
+2017-11-11 12:00:00	Good	1981
+2017-11-11 08:00:00	Good	1200
+2017-11-04 11:00:00	Good	2160
+2017-11-11 15:00:00	Good	2400
+2017-11-11 20:00:00	Good	1500
+```
