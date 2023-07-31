@@ -29,7 +29,7 @@ print(weather_records)
 ```
 El resultado del código anterior fue el siguiente:
 ```python
-Date and time Temperature       Description
+     Date and time          Temperature    Description
 0    2017-11-01 00:00:00     276.150     broken clouds
 1    2017-11-01 01:00:00     275.700  scattered clouds
 2    2017-11-01 02:00:00     275.610   overcast clouds
