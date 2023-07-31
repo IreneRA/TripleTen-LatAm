@@ -1,7 +1,7 @@
 # Análisis sobre viajes en taxi en Chicago
 Esta análisis tiene como objetivo encontrar patrones en la información disponible y comprender las preferencias de los pasajeros y el impacto de los factores externos en los viajes de taxi de la ciudad de Chicago.
 
-## Extraer datos
+## Extraer datos sobre el clima de una página web
 Primero, se hizo un código para extraer los datos sobre el clima en Chicago en noviembre de 2017. Esto desde un [sitio web](https://practicum-content.s3.us-west-1.amazonaws.com/data-analyst-eng/moved_chicago_weather_2017.html). Tras lo cual se analizaron lo datos. El código usado fue el siguiente:
 
 ```python 
@@ -13,18 +13,18 @@ req = requests.get('https://practicum-content.s3.us-west-1.amazonaws.com/data-an
 soup = BeautifulSoup(req.text, 'lxml') 
 table = soup.find('table',attrs={"id": "weather_records"})
 
-heading_table = []  #encabezados de columna
+heading_table = []  #lista para guardar los encabezados de columna
 for row in table.find_all('th'): # Los nombres de las columnas están dentro de los elementos <th>
     heading_table.append(row.text)
 
-content = []  #lista donde se almacenarán los datos de la tabla
+content = []  #lista para almacenar los datos de la tabla
 for row in table.find_all('tr'):
     if not row.find_all('th'):
         # Condición para ignorar la primera fila de la tabla, con encabezados
         content.append([element.text for element in row.find_all('td')])
 
+#Crear tabla y mostrarla
 weather_records = pd.DataFrame(content, columns=heading_table)
-
 print(weather_records)
 ```
 El resultado del código anterior fue el siguiente:
@@ -55,4 +55,14 @@ El resultado del código anterior fue el siguiente:
 [697 rows x 3 columns]
 ```
 
-abc
+Con la información anterior, se creó la tabla `weather_records` 
+
+![image](https://github.com/IreneRA/TripleTen-LatAm/assets/32276245/f48cea98-62c2-4ee2-9970-55663de4d3d5)
+
+
+
+
+## 
+
+Recupera de la tabla de trips todos los viajes que comenzaron en el Loop (pickup_location_id: 50) el sábado y terminaron en O'Hare (dropoff_location_id: 63). Obtén las condiciones climáticas para cada viaje. Utiliza el método que aplicaste en la tarea anterior. Recupera también la duración de cada viaje. Ignora los viajes para los que no hay datos disponibles sobre las condiciones climáticas.
+
