@@ -57,12 +57,12 @@ El resultado del código anterior fue el siguiente:
 
 Con la información anterior, se creó la tabla `weather_records` 
 
+## Unificar tablas
+Se cuenta con una base de datos cuyo esquema de tablas se muestra a continuación:
+
 ![image](https://github.com/IreneRA/TripleTen-LatAm/assets/32276245/f48cea98-62c2-4ee2-9970-55663de4d3d5)
 
-
-
-
-## 
+ 1. Se recuperan de la tabla `trips`
 
 Recupera de la tabla de trips todos los viajes que comenzaron en el Loop (pickup_location_id: 50) el sábado y terminaron en O'Hare (dropoff_location_id: 63). Obtén las condiciones climáticas para cada viaje. Utiliza el método que aplicaste en la tarea anterior. Recupera también la duración de cada viaje. Ignora los viajes para los que no hay datos disponibles sobre las condiciones climáticas.
 
