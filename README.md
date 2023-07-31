@@ -91,7 +91,7 @@ Flash Cab	                        19558
 Taxi Affiliation Services	        11422
 Medallion Leasin	                10367
 Yellow Cab	                        9888
-Taxi Affiliation Service Yellow	    9299
+Taxi Affiliation Service Yellow     9299
 ...
 ```
 
@@ -172,4 +172,4 @@ start_ts	            weather_conditions	duration_seconds
 En el análisis de datos adjunto, esta tabla se guarda como `df_trips_la`
 
 ## 
-Se tienen la información necesaria obtenida de la base de datos, se prosigue con el análisis por medio del código de Python adjunto.
+Se tiene la información necesaria obtenida de la base de datos, se prosigue con el análisis por medio del código de Python adjunto.
