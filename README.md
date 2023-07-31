@@ -97,7 +97,7 @@ ts	weather_conditions
 2017-11-09 06:00:00	Good
 2017-11-09 07:00:00	Good
 ```
-- Con el método anterior, se unifican los datos requeridos con el siguiente código `SQL`:
+- Con el método anterior, se unifican los datos requeridos:
   
 ```SQL
 SELECT
