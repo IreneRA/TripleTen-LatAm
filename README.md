@@ -7,5 +7,23 @@ Primero, se hizo un código para extraer los datos sobre el clima en Chicago en 
 ```python 
 import pandas as pd 
 import requests  # Importa la librería para enviar solicitudes al servidor 
-from bs4 import BeautifulSoup  # Importa la librería para analizar la página web 
+from bs4 import BeautifulSoup  # Importa la librería para analizar la página web
+
+req = requests.get('https://practicum-content.s3.us-west-1.amazonaws.com/data-analyst-eng/moved_chicago_weather_2017.html') 
+soup = BeautifulSoup(req.text, 'lxml') 
+table = soup.find('table',attrs={"id": "weather_records"})
+
+heading_table = []  #encabezados de columna
+for row in table.find_all('th'): # Los nombres de las columnas están dentro de los elementos <th>
+    heading_table.append(row.text)
+
+content = []  #lista donde se almacenarán los datos de la tabla
+for row in table.find_all('tr'):
+    if not row.find_all('th'):
+        # Condición para ignorar la primera fila de la tabla, con encabezados
+        content.append([element.text for element in row.find_all('td')])
+
+weather_records = pd.DataFrame(content, columns=heading_table)
+
+print(weather_records)
 ```
