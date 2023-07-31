@@ -86,11 +86,11 @@ ORDER BY
 ```
 El resultado del código anterior fue el siguiente:
 ```
-company_name	                    trips_amount
-Flash Cab	                        19558
-Taxi Affiliation Services	        11422
-Medallion Leasin	                10367
-Yellow Cab	                        9888
+company_name                         trips_amount
+Flash Cab                             19558
+Taxi Affiliation Services             11422
+Medallion Leasin                      10367
+Yellow Cab                            9888
 Taxi Affiliation Service Yellow       9299
 ...
 ```
