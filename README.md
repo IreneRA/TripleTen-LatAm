@@ -57,11 +57,45 @@ El resultado del código anterior fue el siguiente:
 
 Con la información anterior, se creó la tabla `weather_records`.
 
-## Unificar tablas
+## Analizar base de datos
 Se cuenta con una base de datos cuyo esquema de tablas se muestra a continuación:
 
 ![image](https://github.com/IreneRA/TripleTen-LatAm/assets/32276245/f48cea98-62c2-4ee2-9970-55663de4d3d5)
 
+
+### Tabla 1
+Tabla que incluye la cantidad de viajes para cada compañía de taxis para el 15 y 16 de noviembre de 2017. Se ordenan los resultados por el campo trips_amount en orden descendente.
+
+Esto se hace con el siguiente código `SQL`:
+```SQL
+SELECT
+    cabs.company_name,
+    COUNT(trips.trip_id) AS trips_amount
+FROM 
+    cabs
+    INNER JOIN 
+    trips 
+    ON 
+    trips.cab_id = cabs.cab_id
+WHERE 
+    CAST(trips.start_ts AS date) BETWEEN '2017-11-15' AND '2017-11-16'
+GROUP BY 
+    company_name
+ORDER BY 
+    trips_amount DESC;
+```
+El resultado del código anterior fue el siguiente:
+```
+company_name	                    trips_amount
+Flash Cab	                        19558
+Taxi Affiliation Services	        11422
+Medallion Leasin	                10367
+Yellow Cab	                        9888
+Taxi Affiliation Service Yellow	    9299
+...
+```
+
+### Tabla 2
 - Se recuperan, de la tabla `trips`, los viajes del sábado que iniciaron en el Loop (pickup_location_id: 50) y terminaron en O'Hare (dropoff_location_id: 63).
 - En cada viaje, se obtienen las condiciones climáticas y se separan en dos grupos, esta condición se guarda en la columna `weather_conditions`:
     - `Bad` - si las condiciones incluyen días con las palabras rain o storm
@@ -132,3 +166,6 @@ start_ts	            weather_conditions	duration_seconds
 2017-11-11 15:00:00	    Good	            2400
 2017-11-11 20:00:00	    Good	            1500
 ```
+
+## 
+Se tienen la información necesaria obtenida de la base de datos, se prosigue con el análisis por medio del código de Python adjunto.
