@@ -95,6 +95,8 @@ Taxi Affiliation Service Yellow	    9299
 ...
 ```
 
+En el análisis de datos adjunto, esta tabla se guarda como `df_company`
+
 ### Tabla 2
 - Se recuperan, de la tabla `trips`, los viajes del sábado que iniciaron en el Loop (pickup_location_id: 50) y terminaron en O'Hare (dropoff_location_id: 63).
 - En cada viaje, se obtienen las condiciones climáticas y se separan en dos grupos, esta condición se guarda en la columna `weather_conditions`:
@@ -166,6 +168,8 @@ start_ts	            weather_conditions	duration_seconds
 2017-11-11 15:00:00	    Good	            2400
 2017-11-11 20:00:00	    Good	            1500
 ```
+
+En el análisis de datos adjunto, esta tabla se guarda como `df_trips_la`
 
 ## 
 Se tienen la información necesaria obtenida de la base de datos, se prosigue con el análisis por medio del código de Python adjunto.
