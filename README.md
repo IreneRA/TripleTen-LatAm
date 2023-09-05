@@ -173,4 +173,5 @@ En el análisis de datos adjunto, esta tabla se guarda como `df_trips_la`
 
 ## 
 Se tiene la información necesaria obtenida de la base de datos, se prosigue con el análisis por medio del código de Python adjunto.
+
 [Analisis de datos con Python](https://github.com/IreneRA/TripleTen-LatAm/blob/6-Taxi-trips-analysis/S6%20-%20taxis%20Chicago.ipynb)
