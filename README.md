@@ -1,13 +1,13 @@
 # TripleTen LatAm (Practicum)
 
-## Borrowers’ risk analysis
+## Vehicle Price analysis
 
-Analysis of the important characteristics to take into account when creating a credit score for a potential client
+Analysis to determine what factors influence the price of a vehicle and how much they influence.
 
-**Highlights:** *pandas, duplicate and missing data, wrong data types, classifying data*
+**Highlights:** *pandas, numpy, matplot, fix duplicate, missing and outlier values, wrong data types, classify data, dictionary*
 
-## Análisis del riesgo de prestatarios
+## Análisis de precio de vehiculos
 
-Analizar características importantes a tener en cuenta al crear una puntuación de crédito para un cliente potencial.
+Análisis para determinar qué factores influyen en el precio de un vehículo y qué tanto influyen. 
 
-**Características a destacar:** *pandas, valores duplicados y ausentes, tipos de datos erróneos, clasificar datos*
+**Características a destacar:** *pandas, numpy, matplot, corregir valores duplicados, ausentes y atípicos, tipos de datos erróneos, clasificar datos, diccionario*
