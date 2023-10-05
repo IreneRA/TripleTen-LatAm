@@ -1,7 +1,8 @@
 # TripleTen LatAm (Practicum)
 These are the projects I made in the Data Scientist course in [TripleTen LatAm](https://Tripleten.com/data-science/).
-They involve data Preprocessing and data analysis as well as statistical analysis. 
 
+They involve data Preprocessing, data analysis as well as statistical analysis. 
+Some of them involve the creation of a Machine Learning models.
 
 
 | Topic                 | Project               | Description                                                                                 | Highlights                     |
@@ -13,6 +14,7 @@ They involve data Preprocessing and data analysis as well as statistical analysi
 |Collect and Store Data with SQL|[Chicago Taxi Trips Analysis](https://github.com/IreneRA/TripleTen-LatAm/tree/6-Taxi-trips-analysis)|Analyze the behavior of Taxi passengers in Chicago city and explore the impact of external factors, such as weather, in the rides.|*pandas, SQL, matplotlib, seaborn, scipy*|
 |Machine Learning|[ML Model: Telephonic Plan Recommendation](https://github.com/IreneRA/TripleTen-LatAm/blob/7-ML-recommend-phone-plan/S7%20-%20suscriptores%20megaline.ipynb)|Develop a machine learning model based on the behavior of current customers, to recommend telephone plans to new customers.|*pandas, GridSearchCV, sklearn,  Machine Learning*|
 |ML supervised learning|[ML Model: Predict bank customers loyalty](https://github.com/IreneRA/TripleTen-LatAm/blob/8-ML-bank-loyalty/S8%20-%20lealtad%20banco.ipynb)|Develop a machine learning classification model, based on the behavior of current customers, to predict if they will stay or stop using the bank services soon.|*pandas, GridSearchCV, sklearn,  Machine Learning*|
+|ML in business|[ML Model: Oil region profit and risk prediction](https://github.com/IreneRA/TripleTen-LatAm/blob/9-ML-Oil-Region/S9%20-%20Region%20pozos%20petr%C3%B3leo.ipynb)|Develop a machine learning model to predict the volume of reserves of new wells and choose the region with the highest benefit and lowest risk.|*pandas, numpy, statistics, matplotlib, sklearn*|
 |**:star:Project**|[Gold Extraction Analysis](https://github.com/IreneRA/TripleTen-LatAm/blob/10-Gold-extraction-analysis/S10%20Extraccion%20de%20oro2.ipynb)|Create a Machine Learning model to predict the amount of gold mined, optimize production, and remove unprofitable parameters.|*pandas, matplotlib, numpy, sklearn*|
 
 
@@ -30,4 +32,5 @@ Los proyectos involucran preprocesamiento de datos y análisis estadístico.
 |Recopilación y almacenamiento de datos con SQL|[Análisis de viajes de taxis en Chicago](https://github.com/IreneRA/TripleTen-LatAm/tree/6-Taxi-trips-analysis)|Analizar el comportamiento de los pasajeros de taxis en la ciudad de Chicago y explorar el impacto de factores externos, como el clima, en los viajes.|*pandas, SQL, matplotlib, seaborn, scipy*|
 |Machine Learning|[Modelo ML: recomendación de planes telefónicos](https://github.com/IreneRA/TripleTen-LatAm/blob/7-ML-recommend-phone-plan/S7%20-%20suscriptores%20megaline.ipynb)|Desarrollar un modelo de machine learning basado en el comportamiento de clientes actuales, para recomendar planes telefónicos a clientes nuevos.|*pandas, GridSearchCV, sklearn,  Machine Learning*|
 |ML aprendizaje supervisado|[Modelo ML: predecir lealtad de clientes del banco](https://github.com/IreneRA/TripleTen-LatAm/blob/8-ML-bank-loyalty/S8%20-%20lealtad%20banco.ipynb)|Desarrollar un modelo de machine learning de clasificación, basado en el comportamiento de los clientes actuales, para predecir si permanecerán o dejarán de utilizar los servicios del banco próximamente.|*pandas, GridSearchCV, sklearn,  Machine Learning*|
+|ML en negocios|[Modelo ML: Predicción de ganancias y riesgos en regiones petroleras](https://github.com/IreneRA/TripleTen-LatAm/blob/9-ML-Oil-Region/S9%20-%20Region%20pozos%20petr%C3%B3leo.ipynb)|Desarrollar un modelo de machine learning para predecir el volumen de reservas de pozos nuevos y elegir la región con el mayor beneficio y menor riesgo.|*pandas, numpy, statistics, matplotlib, sklearn*|
 |**:star: Proyecto**|[Análisis de extracción de oro](https://github.com/IreneRA/TripleTen-LatAm/blob/10-Gold-extraction-analysis/S10%20Extraccion%20de%20oro2.ipynb)|Crear un modelo de Machine Learning para predecir la cantidad de oro extraído, optimizar la producción y eliminar los parámetros no rentables.|*pandas, matplotlib, numpy, sklearn*|
