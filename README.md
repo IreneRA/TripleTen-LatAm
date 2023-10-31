@@ -5,7 +5,7 @@ They involve data Preprocessing, data analysis as well as statistical analysis.
 Some of them involve the creation of a Machine Learning models.
 
 
-| Topic                 | Project               | Description                                                                                 | Highlights                     |
+| Topic                 | Project               | Description                                                                                 | Highlights & Libraries         |
 |:--------------------- |:--------------------- |:------------------------------------------------------------------------------------------- |:------------------------------ |
 |Data Preprocessing|[Borrowers’ risk Analysis](https://github.com/IreneRA/Practicum/blob/2-borrowers%E2%80%99risk-analysis/An%C3%A1lisis%20del%20riesgo%20de%20incumplimiento%20de%20los%20prestatarios.ipynb)| Analysis of the important characteristics to take into account when creating a credit score for a potential client.|*pandas, duplicate and missing data, wrong data types, classifying data*|
 |Exploratory Data Analysis|[Vehicle Price Analysis](https://github.com/IreneRA/TripleTen-LatAm/blob/3-Vehicle-Price-Analysis/S3%20-%20precio%20vehiculos.ipynb)| Analysis to determine what factors influence the price of a vehicle and how much they influence.|*pandas, numpy, matplot, fix duplicate, missing and outlier values, wrong data types, classify data, dictionary*|
@@ -25,7 +25,7 @@ Estos son proyectos que hice en el curso de científico de datos en  [TripleTen 
 
 Los proyectos involucran preprocesamiento de datos y análisis estadístico. 
 
-| Tema             | Proyecto              | Descripción                                                                                 | Características a destacar     |
+| Tema             | Proyecto              | Descripción                                                                                 | Características a destacar y librerias  |
 |:---------------------|:--------------------- |:------------------------------------------------------------------------------------------- |:------------------------------ |
 |Preprocesamiento de datos|[Análisis del riesgo de prestatarios](https://github.com/IreneRA/Practicum/blob/2-borrowers%E2%80%99risk-analysis/An%C3%A1lisis%20del%20riesgo%20de%20incumplimiento%20de%20los%20prestatarios.ipynb)| Analizar características importantes a tener en cuenta al crear una puntuación de crédito para un cliente potencial.|*pandas, valores duplicados y ausentes, tipos de datos erróneos, clasificar datos*|
 |Análisis exploratorio de datos (EDA)|[Análisis de precio de vehiculos](https://github.com/IreneRA/TripleTen-LatAm/blob/3-Vehicle-Price-Analysis/S3%20-%20precio%20vehiculos.ipynb)| Análisis para determinar qué factores influyen en el precio de un vehículo y qué tanto influyen.|*pandas, numpy, matplot, corregir valores duplicados, ausentes y atípicos, tipos de datos erróneos, clasificar datos, diccionario*|
