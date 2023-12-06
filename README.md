@@ -21,7 +21,7 @@ Some of them involve the creation of a Machine Learning models.
 |Temporal Series|Taxi Orders Machine Learning Model|Machine learning model that predicts taxi orders at a certain time at an airport.|*pandas, numpy, matplotlib, statsmodels, sklearn, catboost, lightgbm*|
 |Machine learning for text|[ML Model: Classify Movie Reviews](https://github.com/IreneRA/TripleTen-LatAm/blob/14-Sentiment-Analysis/S14%20Sentiment%20analysis.ipynb)|Machine learning model to classify movie reviews as positive or negative.|*pandas, numpy, math, re, nltk, matplotlib, seaborn, tqdm, spacy, sklearn, lightgbm*|
 |Artificial Vision|[ML Model: Artificial Vision to Determine Age](https://github.com/IreneRA/TripleTen-LatAm/blob/15-vision-artificial/S15%20-%20Artificial%20Vision.ipynb)|Using artificial vision, determine the age of a person from an image. To do this, a model is built and evaluated to verify the age of people.|*pandas, numpy, matplotlib, tensorflow*|
-|**:star: Final Project**|ML Model: Predict service cancellation|Develop a machine learning model that predicts whether a person is likely to cancel a service to offer them promotions and/or special plans.|*pandas, matplotlib, seaborn, sklearn, catboost, lightgbm*|
+|**:star: Final Project**|[ML Model: Predict service cancellation](https://github.com/IreneRA/TripleTen-LatAm/blob/16-final/s16%20Final%20Project.ipynb)|Develop a machine learning model that predicts whether a person is likely to cancel a service to offer them promotions and/or special plans.|*pandas, matplotlib, seaborn, sklearn, catboost, lightgbm*|
 
 # TripleTen LatAm (Practicum)
 Estos son proyectos que hice en el curso de científico de datos en  [TripleTen LatAm](https://tripleten.com/es-mex/data-scientist/).
